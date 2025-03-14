@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppsDiasVividos", "AppsDiasVividos.csproj", "{E088F430-E8BD-49D3-9144-C6E075EDEBFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E088F430-E8BD-49D3-9144-C6E075EDEBFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E088F430-E8BD-49D3-9144-C6E075EDEBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E088F430-E8BD-49D3-9144-C6E075EDEBFF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E088F430-E8BD-49D3-9144-C6E075EDEBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E088F430-E8BD-49D3-9144-C6E075EDEBFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E088F430-E8BD-49D3-9144-C6E075EDEBFF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54FE361B-BD5F-4915-B879-5F6924ADD3B9}
+	EndGlobalSection
+EndGlobal
