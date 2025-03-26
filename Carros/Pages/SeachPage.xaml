@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carros.Pages.SeachPage"
+             Title="Pesquisar Veicúlos"
+             >
+    
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,1.2">
+            <GradientStop Color="#020024" Offset="0.1"/>
+            <GradientStop Color="#7e46a8" Offset="0.6"/>
+
+        </LinearGradientBrush>
+    
+    </ContentPage.Background>
+    <ScrollView>
+        <VerticalStackLayout>
+            <Frame BorderColor="Black"
+               CornerRadius="10"
+               Margin="25"
+               VerticalOptions="Center"
+               Padding="0">
+                <SearchBar Placeholder="Procurar Items" FontFamily="Oswald"/>
+
+            </Frame>
+
+            <Label Text="Principais Marcas"
+               TextColor="White"
+               Padding="10"
+               FontFamily="Oswalbold"
+               FontSize="20"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Frame Padding="0"
+                   Margin="10"
+                   Grid.Column="0"
+                   Grid.Row="0">
+                    <Button x:Name="btnPageChevrolet"
+                    Text="Chevrolet"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    FontSize="18"
+                    Clicked="OnButtonClicked"
+                     FontFamily="Oswald"/>
+                </Frame>
+                <Frame Padding="0"
+                    Margin="10"
+                    Grid.Column="1"
+                    Grid.Row="0">
+                 <Button x:Name="btnPageCitroen"
+                 Text="CITROËN"
+                 BackgroundColor="White"
+                 TextColor="Black"
+                 FontSize="18"
+                 Clicked="OnButtonClicked"
+                 FontFamily="Oswald"/>
+                </Frame>
+                <Frame Padding="0"
+                Margin="10"
+                Grid.Column="2"
+                Grid.Row="0">
+                    <Button x:Name="btnFiat"
+                 Text="FIAT"
+                 BackgroundColor="White"
+                 TextColor="Black"
+                 FontSize="18"
+                 Clicked="OnButtonClicked"
+                 FontFamily="Oswald"/>
+                </Frame>
+                <Frame
+                 Padding="0"
+                 Margin="10"
+                 Grid.Column="0"
+                 Grid.Row="1">
+                    <Button x:Name="btnFord"
+                 Text="FORD"
+                 BackgroundColor="White"
+                 TextColor="Black"
+                 FontSize="18"
+                 Clicked="OnButtonClicked"
+                  FontFamily="Oswald"/>
+                </Frame>
+
+                <Frame Padding="0"
+                 Margin="10"
+                 Grid.Column="1"
+                 Grid.Row="1">
+                    <Button x:Name="btnHonda"
+                 Text="HONDA"
+                 BackgroundColor="White"
+                 TextColor="Black"
+                 FontSize="18"
+                 Clicked="OnButtonClicked"
+                  FontFamily="Oswald"/>
+                </Frame>
+                <Frame Padding="0"
+                 Margin="10"
+                 Grid.Column="1"
+                 Grid.Row="2">
+                    <Button x:Name="btnPageNissan"
+                 Text="NISSAN"
+                 BackgroundColor="White"
+                 TextColor="Black"
+                 FontSize="18"
+                 Clicked="OnButtonClicked"
+                   FontFamily="Oswald"/>
+                </Frame>
+                <Frame Padding="0"
+                  Margin="10"
+                  Grid.Column="2"
+                  Grid.Row="1">
+                    <Button x:Name="btnHyundai"
+                  Text="HYUNDAI"
+                  BackgroundColor="White"
+                  TextColor="Black"
+                  FontSize="18"
+                  Clicked="OnButtonClicked"
+                   FontFamily="Oswald"/>
+                </Frame>
+            </Grid>
+       
+            <Button x:Name="btnAllVehicles"
+                Text="Todos os Veiculos"
+                FontSize="20"                
+                CornerRadius="18"
+                Padding="10"
+                Margin="25"
+                TextColor="Black"
+                BackgroundColor="White"
+                Clicked="OnButtonClicked"
+                FontFamily="Oswald"
+                />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+ </ContentPage>

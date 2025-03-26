@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Carros.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Carros"
+    xmlns:Pages="clr-namespace:Carros.Pages"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Carros"
+    FlyoutBackgroundColor="#c0a0d9"
+   >
+
+   
+
+
+
+    <Shell.FlyoutHeader>
+        <Image Source="logotipo_ex.png" WidthRequest="300"/>
+    </Shell.FlyoutHeader>
+    
+    
+    <Shell.FlyoutFooter >
+        <Label Text="Copyright Matheus M."
+               HorizontalTextAlignment="Center"
+               FontAttributes="Italic"
+               FontSize="15"
+               Padding="10"/>
+
+    </Shell.FlyoutFooter>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
+     <ShellContent
+        
+         Title="Menu"
+        ContentTemplate="{DataTemplate Pages:Home}"
+        Route="Home"
+        Icon="botao_de_inicio.png"
+        />
+
+        
+        
+     <ShellContent
+         Title="Pesquisar"
+         ContentTemplate="{DataTemplate Pages:SeachPage}"
+         Route="SeachPage" 
+        Icon="lupa.png"/>
+
+
+        <ShellContent
+        
+            Title="Veículos"
+            ContentTemplate="{DataTemplate Pages:VehiclesAll}"
+             Route="Veículos"
+             Icon="carros.png"
+         />
+
+
+        <ShellContent
+          Title="Registar Veiculos"
+          ContentTemplate="{DataTemplate Pages:RegisterVehiclePage}"
+          Route="RegisterVehiclePage" 
+         Icon="botao_adicionar.png"/>
+
+
+        <ShellContent
+            Title="Sobre"
+            ContentTemplate="{DataTemplate Pages:OnPage}"
+            Route="OnPage"
+           Icon="informacoes.png"/>
+
+        
+    </FlyoutItem>
+    
+
+</Shell>

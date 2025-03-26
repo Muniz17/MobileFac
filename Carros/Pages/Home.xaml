@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carros.Pages.Home"
+             Title="Menu">
+    
+    
+      <ContentPage.Background>
+            <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,1.2">
+                 <GradientStop Color="#020024" Offset="0"/>
+                <GradientStop Color="#7e46a8" Offset="0.6"/>
+                 
+            </LinearGradientBrush>
+    
+     </ContentPage.Background>
+
+
+
+    
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Label Text="TOP 4 MAIORES FABRICANTES"
+                   TextColor="Wheat"
+                   FontFamily="Oswald"
+                   Margin="15,15,1,10"
+                   FontSize="15"
+                   />
+
+            <CarouselView x:Name="CarouselView"
+                      IndicatorView="IndicatorView"
+                      ItemsSource="{Binding Manufacturers}"
+                      
+          >
+            
+            <CarouselView.ItemsLayout>
+                <LinearItemsLayout Orientation="Horizontal"
+                                  
+                                 />
+            </CarouselView.ItemsLayout>
+            
+            
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout   Margin="25" >
+                            <Frame BackgroundColor="#FFFFFF"
+                               BorderColor="#000000"
+                               
+                               VerticalOptions="Center"
+                               HasShadow="True"
+                               HorizontalOptions="Center">
+                            <Grid >
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding Name}"
+                                  HorizontalOptions="Center"
+                                  VerticalOptions="Center"
+                                  TextColor="Black"
+                                  LineBreakMode="WordWrap"
+                                  Grid.Row="0"
+                                  Grid.Column="0"
+                                  FontFamily="Oswald"
+                                  FontSize="18"/>
+
+                                <Image Source="{Binding ImageUrl}"
+                                   Aspect="AspectFit"
+                                   HeightRequest="200"
+                                   WidthRequest="300"
+                                   Grid.Row="1"
+                                   HorizontalOptions="Center"
+                                   />
+
+                                <Label Text="{Binding Description}"
+                                   
+                                   TextColor="Black"
+                                   LineBreakMode="WordWrap"
+                                   Grid.Row="2"
+                                   FontFamily="OswaldLight"
+                                   />
+
+
+                            </Grid>
+                        </Frame>
+                  </VerticalStackLayout>
+
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+
+        </CarouselView>
+            <IndicatorView x:Name="IndicatorView" Margin="5" HorizontalOptions="Center" IndicatorColor="#7e46a8" SelectedIndicatorColor="White"/>
+     </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
