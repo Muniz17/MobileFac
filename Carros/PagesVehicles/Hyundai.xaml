@@ -3,10 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carros.PagesVehicles.Hyundai"
              Title="Hyundai">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,1.2">
+            <GradientStop Color="#020024" Offset="0.1"/>
+            <GradientStop Color="#7e46a8" Offset="0.6"/>
+
+        </LinearGradientBrush>
+
+    </ContentPage.Background>
+    <ScrollView>
+        <VerticalStackLayout Margin="15,0,15,10">
+            <Frame VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Padding="0"
+                Margin="25,25,10,10">
+                <Image Source="hyundai_pb.png"
+                   HeightRequest="100"
+                   WidthRequest="250"/>
+
+            </Frame>
+            <Frame Margin="10">
+                <Label VerticalTextAlignment="Center"
+                   FontFamily="Oswald"
+                   FontSize="18"
+                   Text="A Hyundai, fundada em 1947, começou como construtora e entrou no mercado automotivo em 1967. O lançamento do Pony, em 1975, marcou o início da produção própria de carros. A marca expandiu-se globalmente, investindo em qualidade e tecnologia, com destaque para carros elétricos e células de combustível. No Brasil, desde os anos 90, consolidou-se com fábrica local e modelos populares como o HB20."/>
+
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

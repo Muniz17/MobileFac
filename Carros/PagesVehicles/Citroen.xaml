@@ -3,10 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carros.PagesVehicles.citroen"
              Title="Citroen">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,1.2">
+            <GradientStop Color="#020024" Offset="0.1"/>
+            <GradientStop Color="#7e46a8" Offset="0.6"/>
+
+        </LinearGradientBrush>
+
+    </ContentPage.Background>
+    <ScrollView>
+        <VerticalStackLayout Margin="15,0,15,10">
+            <Frame VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Padding="0"
+                    Margin="25,25,10,10">
+                <Image Source="citroen_pb.png"
+                       HeightRequest="100"
+                       WidthRequest="250"/>
+
+            </Frame>
+
+
+            <Frame Margin="10">
+                <Label VerticalTextAlignment="Center"
+                       FontFamily="Oswald"
+                       FontSize="18"
+                       Text="A Citroën, fundada por André Citroën em 1919, revolucionou a indústria automobilística com inovações como a produção em massa na Europa e o primeiro carro com tração dianteira. Após dificuldades financeiras, uniu-se à Peugeot, formando o Grupo PSA (agora Stellantis), mantendo seu estilo inovador em modelos como o 2CV e o DS. No Brasil desde os anos 90, destaca-se com modelos como C3 e Aircross."/>
+
+            </Frame>
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

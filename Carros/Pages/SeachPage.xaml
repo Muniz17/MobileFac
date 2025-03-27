@@ -17,10 +17,10 @@
         <VerticalStackLayout>
             <Frame BorderColor="Black"
                CornerRadius="10"
-               Margin="25"
+               Margin="10,25,10,15"
                VerticalOptions="Center"
                Padding="0">
-                <SearchBar Placeholder="Procurar Items" FontFamily="Oswald"/>
+                <SearchBar Placeholder="Procurar Veículos" FontFamily="Oswald"/>
 
             </Frame>
 

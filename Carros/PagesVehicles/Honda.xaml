@@ -3,10 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carros.PagesVehicles.Honda"
              Title="Honda">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,1.2">
+            <GradientStop Color="#020024" Offset="0.1"/>
+            <GradientStop Color="#7e46a8" Offset="0.6"/>
+
+        </LinearGradientBrush>
+
+    </ContentPage.Background>
+    <ScrollView>
+        <VerticalStackLayout Margin="15,0,15,10">
+            <Frame VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Padding="0"
+                Margin="25,25,10,10">
+                <Image Source="honda_pb.png"
+                   HeightRequest="100"
+                   WidthRequest="250"/>
+
+            </Frame>
+            <Frame Margin="10">
+                <Label VerticalTextAlignment="Center"
+                   FontFamily="Oswald"
+                   FontSize="18"
+                   Text="A Ford Motor Company, fundada por Henry Ford em 1903, revolucionou a indústria automobilística com a introdução da linha de montagem móvel e a produção em massa do icônico Modelo T. Essa inovação tornou os automóveis acessíveis à classe média americana, mudando para sempre a forma como as pessoas se locomovem.
+
+Ao longo do século XX, a Ford se expandiu globalmente, lançando modelos populares como o Mustang, o F-150 e o Escort, e se tornou uma das maiores montadoras do mundo.
+
+A Ford chegou ao Brasil em 1919, instalando uma fábrica em São Paulo, e teve um papel importante no desenvolvimento da indústria automobilística brasileira, com modelos como o Corcel, o Maverick e o Del Rey.
+
+No século XXI, a Ford tem se adaptado às mudanças do mercado, investindo em novas tecnologias, como carros elétricos e conectados, e buscando se manter relevante em um cenário automotivo em constante transformação."/>
+
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

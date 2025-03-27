@@ -12,6 +12,7 @@
         </LinearGradientBrush>
 
     </ContentPage.Background>
+    <ScrollView>
     <VerticalStackLayout>
         <Label 
             Padding="25"
@@ -22,18 +23,53 @@
             FontFamily="Oswalbold"
             FontSize="20"
             />
-        <Frame Margin="10"
-               HasShadow="True">
-        <Grid>
+        
+        <Grid Margin="25"
+              RowSpacing="15">
             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            <Frame Padding="8"
+                   Grid.Row="0"
+                   >
                 <Label Text="Aqui ficará os carros após o CRUD"
                        FontSize="30"/>
-            </Grid>
-     </Frame>
+            </Frame>
+            <Frame Padding="8"
+                   Grid.Row="1"
+               >
+                <Label Text="Aqui ficará os carros após o CRUD"
+                 FontSize="30"/>
+            </Frame>
+            <Frame Padding="8"
+                   Grid.Row="2"
+               >
+
+                <Label Text="Aqui ficará os carros após o CRUD"
+                 FontSize="30"/>
+            </Frame>
+            <Frame Padding="8"
+                   Grid.Row="3"
+               >
+                <Label Text="Aqui ficará os carros após o CRUD"
+                FontSize="30"/>
+            </Frame>
+            <Frame Padding="8"
+                   Grid.Row="4"
+               >
+
+                <Label Text="Aqui ficará os carros após o CRUD"
+                FontSize="30"/>
+            </Frame>
+        </Grid>
+     
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

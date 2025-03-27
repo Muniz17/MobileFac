@@ -18,8 +18,7 @@
             
             <Label 
                     Text="Fazer esse app .NET MAUI inspirado na Webmotors é muito mais do que um projeto da faculdade, é uma oportunidade de ouro para o meu crescimento. Estou tendo a chance de mergulhar em tecnologias modernas, aprender todo o processo de desenvolvimento, desde a concepção até a entrega, e resolver desafios reais que me farão um desenvolvedor(a) melhor."
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Center" 
+                    
                     Padding="10"
                     FontSize="18"
                     FontFamily="Oswald"
@@ -27,8 +26,7 @@
                 />
 
             <Label Text="Acredito que essa experiência me dará uma vantagem enorme no mercado de trabalho. Vou aprimorar minhas habilidades, desenvolver um portfólio com algo funcional e aprender a trabalhar em equipe. Além disso, poderei testar minha criatividade e explorar novas ideias."
-                   VerticalOptions="Center" 
-                    HorizontalOptions="Center" 
+                    
                     Padding="10"
                     FontSize="18"
                     FontFamily="Oswald"
@@ -36,8 +34,7 @@
                    TextColor="White"/>
 
             <Label Text="Estou animado(a) para aprender, crescer e me tornar um(a) desenvolvedor(a) mais completo(a). Essa jornada será desafiadora, mas sei que no final, terei uma experiência valiosa e inesquecível!"
-                   VerticalOptions="Center" 
-                    HorizontalOptions="Center" 
+                    
                     Padding="10"
                     FontFamily="Oswald"
                     FontSize="18"
@@ -74,12 +71,14 @@
                        Grid.Column="0"
                        FontAttributes="Bold"
                         FontSize="18"
-                       TextColor="White"/>
+                       TextColor="White"
+                       HorizontalOptions="End"
+                       />
 
                 <Label Text=" Matheus Henrique Muniz"
                        Grid.Row="1"
                        Grid.Column="1"
-                       FontSize="18"
+                       FontSize="15"
                        FontFamily="Oswald"
                        TextColor="White"/>
             </Grid>

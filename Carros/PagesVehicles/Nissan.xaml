@@ -3,10 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carros.PagesVehicles.Nissan"
              Title="Nissan">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,1.2">
+            <GradientStop Color="#020024" Offset="0.1"/>
+            <GradientStop Color="#7e46a8" Offset="0.6"/>
+
+        </LinearGradientBrush>
+
+    </ContentPage.Background>
+    <ScrollView>
+        <VerticalStackLayout Margin="15,0,15,10">
+            <Frame VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Padding="0"
+                Margin="25,25,10,10">
+                <Image Source="nissan_pb.png"
+                   HeightRequest="100"
+                   WidthRequest="250"/>
+
+            </Frame>
+            <Frame Margin="10">
+                <Label VerticalTextAlignment="Center"
+                   FontFamily="Oswald"
+                   FontSize="18"
+                   Text="A Nissan, com raízes na Kwaishinsha Motor Car Works (1911), foi oficialmente estabelecida em 1934. Inicialmente focada em veículos militares, expandiu-se globalmente após a Segunda Guerra, destacando-se por inovação e carros esportivos como o Datsun 240Z. Após dificuldades nos anos 90, a aliança com a Renault em 1999 revitalizou a empresa. Atualmente, a Nissan investe em tecnologias avançadas, como carros elétricos, e no Brasil, desde os anos 90, possui fábrica local e modelos populares como o Kicks."/>
+
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

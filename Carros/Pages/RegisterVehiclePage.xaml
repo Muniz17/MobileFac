@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carros.Pages.RegisterVehiclePage"
-             Title="Adicionar Veiculos"
+             
              >
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,1.2">
@@ -12,10 +12,183 @@
         </LinearGradientBrush>
 
     </ContentPage.Background>
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <ScrollView>
+    <VerticalStackLayout Margin="20,10,25,0">
+        <Label Text="Resgistrar Veículo"
+                Padding="0" 
+                FontSize="25"
+               FontFamily="Oswald"
+               TextColor="White"
+               />
+ 
+        <Label Text="Nome completo:"
+                TextColor="White"
+                FontFamily="Oswald"
+                FontSize="18"
+               Padding="5"
+               />
+        
+        <Frame Padding="0"
+               CornerRadius="5">
+            <Entry Placeholder="Nome Completo"
+                   TextColor="Black"/>
+        </Frame>
+            <Label Text="Email:"
+                 TextColor="White"
+                 FontFamily="Oswald"
+                 FontSize="18"
+                 Padding="5"
+            />
+
+            <Frame Padding="0"
+                   CornerRadius="5">
+                <Entry Placeholder="Email"
+                TextColor="Black"/>
+            </Frame>
+            <Label Text="Fabricante do veículo"
+               TextColor="White"
+               FontFamily="Oswald"
+               FontSize="18"
+               Padding="5"
+               />
+
+            <Frame Padding="0"
+             CornerRadius="5">
+                        <Entry Placeholder="Fabricante"
+             TextColor="Black"/>
+
+            </Frame>
+            <Label Text="Modelo Do Veículo"
+                 TextColor="White"
+                 FontFamily="Oswald"
+                 FontSize="18"
+                 Padding="5"
+            />
+
+            <Frame Padding="0"
+                   CornerRadius="5">
+                <Entry Placeholder="Modelo Do Veículo"
+                 TextColor="Black"/>
+            </Frame>
+            <Label Text="Numero para contato"
+                   TextColor="White"
+                   FontFamily="Oswald"
+                   FontSize="18"
+                   Padding="8"
+             />
+
+            <Frame Padding="0"
+                   CornerRadius="5">
+                <Entry Placeholder="(11) 9999-9999"
+                    TextColor="Black"
+                       MaxLength="10"
+                       Keyboard="Telephone"
+                       
+                       />
+
+            </Frame>
+            <Label Text="Descrição do Veículo"
+                   TextColor="White"
+                   FontFamily="Oswald"
+                   FontSize="18"
+                   Padding="8"
+                   />
+
+            <Frame Padding="0"
+                   CornerRadius="5">
+                <Entry Placeholder="Descrição do Veículo"
+                 TextColor="Black"/>
+
+            </Frame>
+        
+
+            <Frame Grid.Column="1"
+                       Padding="5"
+                       Margin="0,30,200,15"
+                       VerticalOptions="Fill"
+                       HorizontalOptions="Fill">
+
+                <Picker x:Name="DataFabricacao"
+                        Title="Ano de fabricação"                       
+                        >
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>2000</x:String>
+                            <x:String>2001</x:String>
+                            <x:String>2002</x:String>
+                            <x:String>2003</x:String>
+                            <x:String>2004</x:String>
+                            <x:String>2005</x:String>
+                            <x:String>2006</x:String>
+                            <x:String>2007</x:String>
+                            <x:String>2008</x:String>
+                            <x:String>2009</x:String>
+                            <x:String>2010</x:String>
+                            <x:String>2011</x:String>
+                            <x:String>2012</x:String>
+                            <x:String>2013</x:String>
+                            <x:String>2014</x:String>
+                            <x:String>2015</x:String>
+                            <x:String>2016</x:String>
+                            <x:String>2017</x:String>
+                            <x:String>2018</x:String>
+                            <x:String>2019</x:String>
+                            <x:String>2020</x:String>
+                            <x:String>2021</x:String>
+                            <x:String>2022</x:String>
+                            <x:String>2023</x:String>
+                            <x:String>2024</x:String>
+                            <x:String>2025</x:String>
+                            <x:String>2026</x:String>
+                        </x:Array>
+                                 
+                    </Picker.ItemsSource>
+                    
+                </Picker>    
+                </Frame>
+
+
+
+            <Label Text="Adicione a imagem do veículo"
+                Grid.Column="1"
+                Grid.Row="0"
+                FontFamily="Oswald"
+                FontSize="17"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                TextColor="White"
+                Margin="0,15,150,0"/>
+        
+        <Image x:Name="imagemDoVeiculo" Aspect="Fill"/>
+
+        <Frame                
+               CornerRadius="10"
+               Margin="0,25,150,0"
+               HeightRequest="130"
+               WidthRequest="150"
+                
+               BorderColor="Black">
+           <Button Clicked="OnSelecionarFotoClicked"
+               ImageSource="imagem.png" WidthRequest="200" HeightRequest="130"  
+               VerticalOptions="Fill"/>
+        </Frame>
+
+            <Frame CornerRadius="10"
+                   Padding="1"
+                   BorderColor="Black"
+                   Margin="200,20,10,10">
+                <Button BackgroundColor="White"
+                        Text="Enviar"
+                        TextColor="Black"
+                        FontSize="15"
+                        FontFamily="Oswalbold"/>
+
+
+            </Frame>
+        
+       
+           
+        
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

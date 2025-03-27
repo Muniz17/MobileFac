@@ -3,10 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carros.PagesVehicles.Fiat"
              Title="Fiat">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,1.2">
+            <GradientStop Color="#020024" Offset="0.1"/>
+            <GradientStop Color="#7e46a8" Offset="0.6"/>
+
+        </LinearGradientBrush>
+
+    </ContentPage.Background>
+    <ScrollView>
+        <VerticalStackLayout Margin="15,0,15,10">
+            <Frame VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Padding="0"
+                BackgroundColor="White"
+                Margin="25,25,10,10">
+                <Image Source="fiat_pb.png"
+                   HeightRequest="100"
+                   WidthRequest="250"/>
+
+            </Frame>
+            <Frame Margin="10">
+                <Label VerticalTextAlignment="Center"
+                   FontFamily="Oswald"
+                   FontSize="18"
+                   Text="A Fiat (Fabbrica Italiana Automobili Torino) foi fundada em 1899 por Giovanni Agnelli em Turim, Itália. Inicialmente focada em carros de luxo, expandiu-se rapidamente, produzindo desde veículos populares até caminhões e aviões.
+
+Ao longo do século XX, a Fiat se consolidou como uma das maiores montadoras da Europa, com modelos icônicos como o Fiat 500. Enfrentou desafios financeiros, mas se recuperou, expandindo sua presença global, inclusive no Brasil, onde se tornou líder de mercado.
+
+Em 2014, a Fiat se fundiu com a Chrysler, formando a Fiat Chrysler Automobiles (FCA), e em 2021, a FCA se fundiu com a PSA, formando a Stellantis, um dos maiores grupos automotivos do mundo."/>
+
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

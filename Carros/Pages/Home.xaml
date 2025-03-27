@@ -18,12 +18,12 @@
 
     
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout Margin="5">
 
             <Label Text="TOP 4 MAIORES FABRICANTES"
                    TextColor="Wheat"
                    FontFamily="Oswald"
-                   Margin="15,15,1,10"
+                   Margin="15,15,10,10"
                    FontSize="15"
                    />
 
@@ -67,7 +67,7 @@
                                   LineBreakMode="WordWrap"
                                   Grid.Row="0"
                                   Grid.Column="0"
-                                  FontFamily="Oswald"
+                                  FontFamily="Oswalbold"
                                   FontSize="18"/>
 
                                 <Image Source="{Binding ImageUrl}"
@@ -84,6 +84,7 @@
                                    LineBreakMode="WordWrap"
                                    Grid.Row="2"
                                    FontFamily="OswaldLight"
+                                   FontSize="14"
                                    />
 
 

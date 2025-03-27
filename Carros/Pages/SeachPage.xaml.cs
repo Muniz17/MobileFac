@@ -44,7 +44,7 @@ public partial class SeachPage : ContentPage
         }
         if (clickedButton == btnAllVehicles)
         {
-            await Navigation.PushAsync(new Carros.PagesVehicles.allVehicles());
+            await Navigation.PushAsync(new Carros.Pages.VehiclesAll());
         }
 
     }

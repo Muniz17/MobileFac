@@ -70,9 +70,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <MauiXaml Update="PagesVehicles\allVehicles.xaml">
-          <Generator>MSBuild:Compile</Generator>
-        </MauiXaml>
         <MauiXaml Update="PagesVehicles\Chevrolet.xaml">
           <Generator>MSBuild:Compile</Generator>
         </MauiXaml>

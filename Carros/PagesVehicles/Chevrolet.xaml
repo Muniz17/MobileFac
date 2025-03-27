@@ -3,10 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carros.PagesVehicles.Chevrolet"
              Title="Chevrolet">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,1.2">
+            <GradientStop Color="#020024" Offset="0.1"/>
+            <GradientStop Color="#7e46a8" Offset="0.6"/>
+
+        </LinearGradientBrush>
+
+    </ContentPage.Background>
+    <ScrollView>
+    <VerticalStackLayout Margin="15,0,15,10">
+        <Frame 
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               Padding="0"
+               Margin="25,25,10,10">
+        <Image Source="chevrolet_pb.png"
+               HeightRequest="100"
+               WidthRequest="250"/></Frame>
+
+        <Frame Margin="10">
+            <Label Text="A Chevrolet, ou Chevy, foi fundada em 1911 por Louis Chevrolet e William C. Durant. Inicialmente, produziu carros luxuosos, mas logo se voltou para modelos mais acessíveis, tornando-se uma das líderes do mercado automotivo americano.
+
+Em 1918, a Chevrolet foi incorporada à General Motors (GM), impulsionando seu crescimento. A marca lançou modelos icônicos como o Bel Air, o Corvette e o Impala, consolidando sua presença global.
+
+No Brasil, a Chevrolet chegou em 1925, lançando modelos populares como o Opala, o Chevette e o Monza. Hoje, a Chevrolet continua sendo uma marca global, investindo em novas tecnologias e mantendo sua relevância no mercado automotivo."
+                   VerticalTextAlignment="Center"
+                   FontFamily="Oswald"
+                   FontSize="18"/>
+        </Frame>
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
